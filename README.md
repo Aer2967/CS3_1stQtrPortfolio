@@ -1,6 +1,6 @@
-# CS3_1stQtrPortfolio_Tumbaga
+# CS3_1stQtrPortfolio_Lithium_Rea Tumbaga
 
-First Task !!s
+First Task!!
 
 ![Portfolio](https://wiztoonz.com/wp-content/uploads/2022/04/Blog-Post-Portfolio.jpg)
 
