@@ -1,16 +1,24 @@
-<script>
-  let age = window.prompt ("Ënter your age: ", 14)
-  let maxAge = window.prompt ("You will live until the ripe old age of: ", 100)
-  let numPerDay = window.prompt ("Number of snacks daily: ", 5)
-  
- if(confirm("Sure of your numbers?")){
-    let totalRequired = (Number(numPerDay) * 365) * (Number(maxAge) - Number(age))
+<body> 
+   <h1> Feed Me My Snacks </h1>
+      <label> Enter your age
+        <input id = "age" />
+        </label></br>
     
-    document.write ( "You will need " + totalRequired + " of mentos candy to last you until the ripe old age of 100")
-  }
+        <label> Enter your Max age
+        <input id = "maxAge" />
+        </label> </br>
+    
+        <label> Enter number of snacks
+        <input id = "numPerDay" />
+        </label> </br>
+    
+        <p> Result: 
+            <span id ="resultHere"></span>
+        </p>
+    
+        <button> Accept Input </button>
+        
+        <script src="script.js"></script>
 
-  else
-  {
-    alert("Goodbye!")
-  }
-</script>
+    </body>
+
