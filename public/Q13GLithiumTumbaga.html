@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+   <h2> Q1 3rd Graded Exercise submitted by Rea Tumbaga of 9 - Lithium </h2>
+
+   <h1> Guess the Number Game </h1>
+
+   <p> Enter a number between 1 and 100: </p>
+
+   <input id="userGuess" />
+   <button onclick="checkIt()">Check</button>
+
+   <p> Result: <span id="resultHere"></span> </p>
+
+    <script>
+       var dNumber = Math.floor(Math.random() * 100) + 1; 
+       // generates a number from 1 to 100 when the page loads
+
+        function checkIt() {
+            let guess = parseInt(document.getElementById("userGuess").value);
+
+            if (guess < dNumber) {
+                document.getElementById("resultHere").innerHTML = "Higher";
+            } else if (guess > dNumber) {
+                document.getElementById("resultHere").innerHTML = "Lower";
+            } else if (guess === dNumber) {
+                document.getElementById("resultHere").innerHTML = "You are correct!";
+            } else {
+                document.getElementById("resultHere").innerHTML = "Please enter a valid number.";
+            }
+        }
+    </script>
+
+</body>
+</html>
