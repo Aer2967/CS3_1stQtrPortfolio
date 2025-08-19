@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2> Q1 2nd Graded Exercise submitted by Rea Tumbaga of 9 - Lithium </h2>
+
+    <h1> Meal Cost Calculator </h1>
+
+    <label> Meal Price
+        <input id="mealPrice" value="119.99" />
+    </label><br><br>
+
+    <label> Tip
+        <input id="tip" value="20" />
+    </label><br><br>
+
+    <label> Service Charge (%)
+        <input id="serviceCharge" value="12" />
+    </label><br><br>
+
+    <button onclick="totalMeal()">Accept Input</button><br><br>
+
+    <p> Total Meal:
+        <span id="resultHere"></span>
+    </p>
+
+    <script>
+        function totalMeal() {
+            let mp = parseFloat(document.getElementById("mealPrice").value);
+            let tip = parseFloat(document.getElementById("tip").value);
+            let sc = parseFloat(document.getElementById("serviceCharge").value);
+
+            let totalCost = mp + tip + (sc / 100 * mp);
+
+            document.getElementById("resultHere").innerHTML = totalCost.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
